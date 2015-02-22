@@ -44,7 +44,7 @@ $(document).ready(function(){
 	// $("#binds").append(value + "\n");
 	// console.log("Click!");
 	if( $(this).hasClass("disabled") ){
-	    console.log("You can't actually bind Numlock :< but you can have a butt bump! (__)_) *bump* (_(__)");
+	    console.log("You can't actually bind Numlock :< but you can have a butt bump! (__)_) (_(__) *BUMP*");
 	} else {
 	    currentKey = numpad[$(this).text()];
 	    

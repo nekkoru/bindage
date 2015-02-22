@@ -1,6 +1,14 @@
+html, body{
+    background-color: #666;
+}
+
 #container{
     width: 1024px;
     margin: 0 auto;
+    font-family: "Ubuntu Mono";
+    background-color: #999;
+    position: relative;
+    top: -25px;    
 }
 
 #container h1{
@@ -11,6 +19,7 @@
     width: 250px;
     float: left;
     cursor: default;
+    font-size: 14px;
 }
 
 #keyboard .row{
@@ -37,6 +46,7 @@
     position: relative;
     margin: 5px;
     z-index: 100;
+    background-color: #eaeaea;
 }
 
 #keyboard .row .key.active{
@@ -45,11 +55,16 @@
 }
 
 #keyboard .row .key:hover{
-    background-color: #eaeaea;
+    background-color: #aaa;
 }
 
 #keyboard .row .key.active:hover{
     background-color: #666;
+}
+
+#keyboard .row .key.disabled, #keyboard .row .key.disabled:hover{
+    background-color: #666;
+    color: #dadada
 }
 
 #keyboard .row .key.doubleHeight{
@@ -63,7 +78,7 @@
 
 #selections{
     float: left;
-    width: 400px;
+    width: 425px;
 }
 
 #gunList{
@@ -85,10 +100,16 @@
     float: right;
 }
 
+#commit{
+    font-family: "Ubuntu Mono";
+}
+
 #binds{
+    background-color: #eaeaea;
     clear: both;
-    width: 400px;
-    margin: 25px 300px;
+    width: 700px;
+    margin: 25px 150px;
     height: 250px;
     border: 1px solid black;
+    font-family: "Ubuntu Mono";
 }
