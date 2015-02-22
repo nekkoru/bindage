@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bind generator</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/bindgenerator.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>CSGO bind generator!</h1>
+      <div id="keyboard">
+	<div class="row">
+	  <div class="key disabled">Num</div>
+	  <div class="key">/</div>
+	  <div class="key">*</div>
+	  <div class="key">-</div>
+	</div>
+	<div class="row">
+	  <div class="key">7</div>
+	  <div class="key">8</div>
+	  <div class="key">9</div>
+	  <div class="key doubleHeight">+</div>
+	</div>
+	<div class="row">
+	  <div class="key">4</div>
+	  <div class="key">5</div>
+	  <div class="key">6</div>
+	</div>
+	<div class="row">
+	  <div class="key">1</div>
+	  <div class="key">2</div>
+	  <div class="key">3</div>
+	  <div class="key doubleHeight">Enter</div>
+	</div>
+	<div class="row">
+	  <div class="key doubleWidth">0</div>
+	  <div class="key">.</div>
+	</div>
+      </div>
+      <div id="selections">
+	<div id="gunList">
+	  <h3>Pistols</h3>
+	  <label><input type="checkbox" value="usp"> Glock / USP-S / P2000</label><br>
+	  <label><input type="checkbox" value="dualies"> Dual Berettas</label><br>
+	  <label><input type="checkbox" value="p250"> P250</label><br>
+	  <label><input type="checkbox" value="deagle"> Desert Eagle</label><br>
+	  <label><input type="checkbox" value="tec9"> Tec-9 / Five-Seven / CZ-75</label>
+	  <h3>Heavy</h3>
+	  <label><input type="checkbox" value="nova">Nova</label><br>
+	  <label><input type="checkbox" value="xm1014">XM1014</label><br>
+	  <label><input type="checkbox" value="sawedoff">Sawed-Off / Mag-7</label><br>
+	  <label><input type="checkbox" value="m249">M249</label><br>
+	  <label><input type="checkbox" value="negev">Negev</label>
+	  
+	  <h3>SMGs</h3>
+	  <label><input type="checkbox" value="mac10">MAC-10 / MP9</label><br>
+	  <label><input type="checkbox" value="mp7">MP7</label><br>
+	  <label><input type="checkbox" value="ump45">UMP-45</label><br>
+	  <label><input type="checkbox" value="p90">P90</label><br>
+	  <label><input type="checkbox" value="bizon">PP-Bizon</label>
+	  
+	  <h3>Rifles</h3>
+	  <label><input type="checkbox" value="famas">Galil AR / FAMAS</label><br>
+	  <label><input type="checkbox" value="ak47">AK47 / M4A4 / M4A1-S</label><br>
+	  <label><input type="checkbox" value="ssg08">SSG08 (Scout)</label><br>
+	  <label><input type="checkbox" value="aug">SG553 / AUG</label><br>
+	  <label><input type="checkbox" value="awp">AWP</label><br>
+	  <label><input type="checkbox" value="scar20">G3SG1 / SCAR-20</label>
+	  <h3>Items</h3>
+	  <label><input type="checkbox" value="kevlar">Kevlar</label><br>
+	  <label><input type="checkbox" value="vesthelm">Kevlar + helmet</label><br>
+	  <label><input type="checkbox" value="zeus">Zeus x27</label><br>
+	  <label><input type="checkbox" value="defuser">Defuse Kit / Rescue Kit</label>
+	  <h3>Grenades</h3>
+	  <label><input type="checkbox" value="molotov">Molotov / Incendiary Grenade</label><br>
+	  <label><input type="checkbox" value="decoy">Decoy</label><br>
+	  <label><input type="checkbox" value="flashbang">Flashbang</label><br>
+	  <label><input type="checkbox" value="hegrenade">High Explosive Grenade</label><br>
+	  <label><input type="checkbox" value="smokegrenade">Smoke Grenade</label><br>
+	</div>
+	<div id="currentBind"></div>
+	<input type="submit" id="commit" value="Add to bindfile">
+      </div>
+      <p id="instructions">
+	Click on the key, then choose the gun you want assigned to that key. Click "Add to bindfile" to commit the buy script.<br><br>
+
+	After you have a buy script you're happy with, copy and paste it into your config.cfg. It's located in steamapps/common/Counter-Strike Global Offensive/csgo/cfg/autoexec.cfg. Just paste it at the end of all the default binds.<br><br>
+
+	To prevent any unnecessary bug reports: "buy ak47" buys an AK if you're playing on T side and an M4 on CT. Same goes for other guns.
+      </p>
+      <textarea id="binds"></textarea>
+    </div>
+  </body>
+</html>

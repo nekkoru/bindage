@@ -1,0 +1,94 @@
+#container{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#container h1{
+    text-align: center;
+}
+
+#keyboard{
+    width: 250px;
+    float: left;
+    cursor: default;
+}
+
+#keyboard .row{
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 45px;
+}
+
+#keyboard .row .doubleSpace{
+    margin-right:30px;
+}
+
+#keyboard .row .singleSpace{
+    margin-right: 15px;
+}
+
+#keyboard .row .key{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: relative;
+    margin: 5px;
+    z-index: 100;
+}
+
+#keyboard .row .key.active{
+    background-color: #666;
+    color: white;
+}
+
+#keyboard .row .key:hover{
+    background-color: #eaeaea;
+}
+
+#keyboard .row .key.active:hover{
+    background-color: #666;
+}
+
+#keyboard .row .key.doubleHeight{
+    height: 81px;
+    z-index: 101;
+}
+
+#keyboard .row .key.doubleWidth{
+    width: 86px;
+}
+
+#selections{
+    float: left;
+    width: 400px;
+}
+
+#gunList{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#gunList h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#currentBind{
+    margin: 5px 0px;
+}
+
+#instructions{
+    width: 300px;
+    float: right;
+}
+
+#binds{
+    clear: both;
+    width: 400px;
+    margin: 25px 300px;
+    height: 250px;
+    border: 1px solid black;
+}
