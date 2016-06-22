@@ -66,5 +66,7 @@ $(document).ready(function(){
     $("#commit").click(function(event){
 	event.preventDefault();
 	$("#binds").append(currentBind + "\n");
+  currentBind = "";
+  $("#currentBind").text(currentBind);
     });
 });
